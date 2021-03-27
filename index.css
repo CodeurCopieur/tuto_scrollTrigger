@@ -16,11 +16,20 @@
 
 .square {
   width: 150px;
-  height: 150px;
-  background-color: cornflowerblue; }
+  height: 20vh;
+  background-color: cornflowerblue;
+  -webkit-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s; }
 
 .square2 {
   margin-top: 300px;
   width: 150px;
   height: 150px;
   background-color: green; }
+
+.toggleClass {
+  background-color: red;
+  -webkit-transform: translateX(700px);
+  -ms-transform: translateX(700px);
+  transform: translateX(700px); }

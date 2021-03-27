@@ -19,8 +19,9 @@
 
 .square {
   width: 150px;
-  height: 150px;
+  height: 20vh;
   background-color: cornflowerblue;
+  transition: all .5s;
 }
 
 .square2 {
@@ -28,4 +29,9 @@
   width: 150px;
   height: 150px;
   background-color: green;
+}
+
+.toggleClass {
+  background-color: red;
+  transform: translateX(700px);
 }
