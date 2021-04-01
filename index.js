@@ -1,4 +1,4 @@
-gsap.registerPlugin(ScrollTrigger)
+gsap.registerPlugin(ScrollTrigger);
 
 /*gsap.to(".square", {
   x: 700,
@@ -7,8 +7,8 @@ gsap.registerPlugin(ScrollTrigger)
 })*/
 
 
-gsap.to(".square", {
-  //x: 700,
+/*gsap.to(".square", {
+  x: 700,
   duration: 3,
   scrollTrigger: {
     trigger: ".square",
@@ -16,11 +16,30 @@ gsap.to(".square", {
     end: () =>  `+=${document.querySelector(".square").offsetHeight}`,//"center 20%",
     markers: true,
     toggleClass: "toggleClass"
-    /*markers: {//ou true
+    markers: {//ou true
       startColor: "blue",
       endColor: "red",
       fontSize: "10px",
       indent: 20
-    }*/
+    }
+  }
+})*/
+
+gsap.to(".square", {
+  x: 1000,
+  duration: 8,
+  scrollTrigger: {
+    trigger: ".square",
+    start: "top 60%",
+    end: "top 40%",
+    toggleActions: "restart   pause    resume      complete",
+    //    play pause resume reverse restart reset complete none
+    //              onEnter   onLeave  onEnterBack onLeaveBack 
+    markers: {//ou true
+      startColor: "blue",
+      endColor: "red",
+      fontSize: "10px",
+      indent: 20
+    }
   }
 })
