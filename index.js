@@ -1,13 +1,18 @@
 gsap.registerPlugin(ScrollTrigger);
 
-/*gsap.to(".square", {
+/*
+gsap.to(".square", {
   x: 700,
   duration: 3,
   scrollTrigger: ".square2"
 })*/
 
 
-/*gsap.to(".square", {
+/*
+
+Start and End
+
+gsap.to(".square", {
   x: 700,
   duration: 3,
   scrollTrigger: {
@@ -23,8 +28,11 @@ gsap.registerPlugin(ScrollTrigger);
       indent: 20
     }
   }
-})*/
+}*/
 
+/*
+Toggle Actions
+*/
 gsap.to(".square", {
   x: 1000,
   duration: 8,
@@ -32,9 +40,10 @@ gsap.to(".square", {
     trigger: ".square",
     start: "top 60%",
     end: "top 40%",
-    toggleActions: "restart   pause    resume      complete",
-    //    play pause resume reverse restart reset complete none
-    //              onEnter   onLeave  onEnterBack onLeaveBack 
+    toggleActions: "restart pause resume complete",
+    //  ex :  play pause resume reverse restart reset complete none
+    // onEnter   onLeave  onEnterBack onLeaveBack
+    // restart pause resume reset
     markers: {//ou true
       startColor: "blue",
       endColor: "red",
