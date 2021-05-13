@@ -32,7 +32,7 @@ gsap.to(".square", {
 
 /*
 Toggle Actions
-*/
+
 gsap.to(".square", {
   x: 1000,
   duration: 8,
@@ -52,3 +52,26 @@ gsap.to(".square", {
     }
   }
 })
+*/
+
+
+/*
+Scrub
+*/
+gsap.to(".square", {
+  x: 1000,
+  duration: 8,
+  scrollTrigger: {
+    trigger: ".square",
+    start: "top 80%",
+    end: "top 30%",
+    scrub: 4, //ou true
+    toggleActions: "restart none none none",
+    markers: {//ou true
+      startColor: "blue",
+      endColor: "red",
+      fontSize: "10px"
+    }
+  }
+})
+
