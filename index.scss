@@ -5,6 +5,11 @@
   font-family: "Montserrat";
 }
 
+body {
+  height: 100vh;
+  position: relative;
+}
+
 .div1, .div2 {
   height: 100vh;
 }
@@ -34,4 +39,15 @@
 .toggleClass {
   background-color: red;
   transform: translateX(700px);
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+}
+
+.panel {
+  height: 100vh;
+  background-color: pink;
 }
